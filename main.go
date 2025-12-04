@@ -10,7 +10,8 @@ func main() {
 	}
 	fmt.Println(name)
 	fmt.Println("***********************************************************")
-	for i, todos := range todos {
-		fmt.Printf("%d. %s\n", i+1, todos)
+	fmt.Println(todos)
+	for i, todos:=range todos {
+		fmt.Println(i, todos)
 	}
 }
