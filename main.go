@@ -14,4 +14,18 @@ func main() {
 	for i, todos:=range todos {
 		fmt.Println(i, todos)
 	}
+
+	fmt.Println("*****************************************************")
+	fmt.Println("Variable Declaration Examples:")
+	fmt.Println("*****************************************************")
+	// Go variables
+	var firstName string = "Ronald"
+	var lastName string = "Mutia"
+	var age int = 25
+	var isMarried bool = false
+
+	fmt.Println("First Name:", firstName)
+	fmt.Println("Last Name:", lastName)
+	fmt.Println("Age:", age)
+	fmt.Println("Is Married:", isMarried)
 }
