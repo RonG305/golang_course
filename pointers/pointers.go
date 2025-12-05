@@ -1,4 +1,4 @@
-package main
+package pointers
 import "fmt"
 
 func main() {
@@ -11,7 +11,5 @@ func main() {
 	fmt.Println("Value of x:", x)		   // 42
 	fmt.Println("Address of x:", &x)        // memory address of x
 	fmt.Println("Value of p (address of x):", p) // same as address of x
-	fmt.Println("Value at address p:", *p)  // 42
+	fmt.Println("Value at address p:", *p)  // get value at address p
 }
-
-
