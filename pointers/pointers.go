@@ -1,7 +1,7 @@
 package pointers
 import "fmt"
 
-func main() {
+func RunPointers() {
 // Pointers
 // Pointers hold the memory address of a value.
 	println("************************Pointers ***************")
@@ -12,4 +12,4 @@ func main() {
 	fmt.Println("Address of x:", &x)        // memory address of x
 	fmt.Println("Value of p (address of x):", p) // same as address of x
 	fmt.Println("Value at address p:", *p)  // get value at address p
-}
+}   

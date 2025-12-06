@@ -1,4 +1,4 @@
-package main
+package functions
 
 import "fmt"
 
@@ -25,7 +25,7 @@ func divide(a, b float64) (float64, string) {
     return a / b, ""
 }
 
-func main() {
+func RunFunctions() {
     sayHello()
     greet("Ronald")
 

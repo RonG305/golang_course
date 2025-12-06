@@ -1,7 +1,7 @@
-package main
+package controlflow
 import "fmt"
 
-func main() {
+func ControlFlow() {
 //  If statements 
 	println("************************If Statements ***************")
 	age := 67
@@ -11,6 +11,17 @@ func main() {
 		fmt.Println("You are an adult.")
 	} else {
 		fmt.Println("You are a senior.")
+	}
+
+	grade := 90
+	if grade < 55 {
+		fmt.Println("Failed")
+	} else if grade >= 55 && grade < 70 {
+		fmt.Println("Good Job")
+	} else if grade >= 70 && grade < 86 {
+		fmt.Println("Great work")
+	} else {
+		fmt.Println("Excellent!")
 	}
 
 
@@ -26,27 +37,6 @@ func main() {
 		fmt.Println("It's", day, "the weekend is near!")
 	default:
 		fmt.Println("It's", day, "just another day.")
-	}
-
-	// Switch with fallthrough
-	// Fallthrough allows the execution to continue to the next case
-	println("************************Switch with fallthrough ***************")
-	grade := "A"
-	switch grade {
-	case "A":
-		fmt.Println("Excellent!")
-		fallthrough
-	case "B":
-		fmt.Println("Very Good!")
-		fallthrough
-	case "C":
-		fmt.Println("Good!")
-	case "D":
-		fmt.Println("You passed.")
-	case "F":
-		fmt.Println("Better luck next time.")
-	default:
-		fmt.Println("Invalid grade.")
 	}
 
 	// Type Switch
